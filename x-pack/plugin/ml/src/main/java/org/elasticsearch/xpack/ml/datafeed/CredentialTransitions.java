@@ -354,7 +354,6 @@ public final class CredentialTransitions {
                     );
                     return;
                 }
-                response.decRef();
                 l.onResponse(null);
             })
         );
