@@ -25,12 +25,7 @@ public class CredentialTransitionsTests extends ESTestCase {
         boolean envelopeExists,
         boolean affectsCrossProjectSearchSurface
     ) {
-        return new TransitionContext(
-            crossProjectEnabled,
-            callerHasCloudCredential,
-            envelopeExists,
-            affectsCrossProjectSearchSurface
-        );
+        return new TransitionContext(crossProjectEnabled, callerHasCloudCredential, envelopeExists, affectsCrossProjectSearchSurface);
     }
 
     public void testCpsDisabledShouldDecideKeep() {
